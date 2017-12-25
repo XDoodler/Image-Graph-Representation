@@ -17,10 +17,10 @@ print(maze)
 for row in maze:
    for row1 in row:
     for row2 in row1:
-     rgb=rgb+row2 #calculate the average RGB
+     rgb=rgb+row2 
     
-    rgb=rgb/3
-    if (rgb!=0.0000000):
+    rgb=rgb/3 #calculate the average RGB
+    if (rgb!=0.0000000): #check the necessary RGB to distinguish points. Apply yours to perform the task
           plt.plot(x,y,'ro')
           c+=1
     else:
